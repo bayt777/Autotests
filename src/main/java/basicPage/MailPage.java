@@ -35,7 +35,7 @@ public class MailPage extends Page {
 		try {
 			message.isDisplayed();
 			checkBoxSelectAll.click();
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			remove.click();
 			Thread.sleep(3000);
 		} catch (Exception e) {
@@ -48,7 +48,7 @@ public class MailPage extends Page {
 		try {
 			checkBoxSelect.isDisplayed();
 			checkBoxSelect.click();
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			remove.click();
 		} catch (Exception e) {
 			System.out.println("Писем нет для удаления");
