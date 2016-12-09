@@ -31,16 +31,16 @@ public class MailPage extends Page {
 	}
 
 	public void removeAllMessages() throws InterruptedException {
-		while(message.isDisplayed()){
-		try {
-			message.isDisplayed();
-			checkBoxSelectAll.click();
-			Thread.sleep(3000);
-			remove.click();
-			Thread.sleep(3000);
-		} catch (Exception e) {
-			System.out.println("Писем нет для удаления");
-		}
+		while (message.isDisplayed()) {
+			try {
+				message.isDisplayed();
+				checkBoxSelectAll.click();
+				Thread.sleep(3000);
+				remove.click();
+				Thread.sleep(3000);
+			} catch (Exception e) {
+				System.out.println("Писем нет для удаления");
+			}
 		}
 	}
 
